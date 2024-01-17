@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-normal;
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .custom-container {
+    @apply w-full mx-auto;
+    max-width: calc(100% - 60px);
+  }
+
+  .nav-wrapper {
+    @apply relative flex flex-wrap items-center justify-between py-8 mb-3 z-50;
+  }
+
+  .nav-wrapper.active {
+    @apply fixed w-full h-full bg-white dark:bg-matte-black items-start;
+  }
+
+  .nav-holder {
+    @apply container mx-auto flex flex-wrap items-center justify-between;
+  }
+
+  .nav-wrapper.active .nav-holder {
+    @apply items-start h-full;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 flex items-center lg:text-xl text-4xl font-bold leading-snug hover:opacity-75 base-transition text-transition;
+  }
+
+  .nav-open {
+    @apply pb-20 absolute top-32 left-0 w-full bg-white z-50;
+  }
+
+  .base-transition {
+    @apply transition duration-200 ease-in-out;
+  }
+
+  .text-transition {
+    @apply hover:text-green-500 dark:hover:text-green-500;
+  }
+
+  .border-transition {
+    @apply hover:border-green-500 dark:hover:border-green-500;
+  }
+
+  .bg-transition {
+    @apply hover:bg-green-500 dark:hover:bg-green-500;
+  }
+
+  .img-transition {
+    @apply transition duration-700 ease-in-out hover:transform hover:scale-105 hover:opacity-75;
+  }
+
+  .link-transition:hover {
+    --d: 100%;
+  }
+
+  .title-decorator::before {
+    content: "";
+    @apply absolute bottom-0 left-0 h-1 w-full bg-green-500;
+  }
+
+  .skill {
+    @apply py-2 px-4 mr-2 mb-2 sm:text-2xl text-lg font-bold border border-gray-200 rounded-full;
+  }
+}

@@ -1,0 +1,6 @@
+/_site/
+/node_modules/
+/vendor/
+/src/assets/css/style.css
+.DS_Store
+/src/.DS_Store
