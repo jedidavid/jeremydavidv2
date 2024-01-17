@@ -10,7 +10,7 @@ title: "Works"
         {% for work in collections.works %}
           <div>
             <a href="{{ work.data.link }}">
-              <img src="{{ work.data.img }}" alt="" class="img-transition"></a>
+              {% image work.data.img, work.data.title, "img-transition", ["900, 600"] %}
               <div class="py-2">
                 <p>
                   {% for type in work.data.types | join(", ") -%}
