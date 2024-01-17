@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
   </head>
-  <body>
+  <body class="bg-white text-matte-black dark:bg-matte-black dark:text-white">
     {% include "layout/header.njk" %}
     <main>
       {% block main %}{% endblock main %}
     </main>
     {% include "layout/footer.njk" %}
+    <script src="{{ '/assets/js/index.js' | url }}"></script>
   </body>
 </html>
