@@ -5,6 +5,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
+  eleventyConfig.addCollection("featuredWork", function (collectionApi) {
+    return collectionApi.getFilteredByTags("works", "featured");
+  });
+
   /* Options */
   return {
     dir: {
