@@ -1,7 +1,7 @@
 <div class="py-8">
   <div class="nav-holder">
     <div class="w-full relative flex justify-between">
-      <a href="/" class="leading-none inline-block whitespace-no-wrap base-transition text-transition">
+      <a href="/" class="leading-none inline-block whitespace-no-wrap base-transition text-transition" aria-label="logo">
         <div class="absolute">
           <svg width="50" height="50" viewBox="0 0 500 500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M153.552 0V72.8368H67.2131V0H153.552ZM153.552 102.41V412.377C153.552 470.975 117.486 500 63.9344 500C32.2404 500
@@ -17,7 +17,8 @@
       <button
         type="button"
         class="block lg:hidden cursor-pointer text-4xl leading-none outline-none focus:outline-none text-black dark:text-white"
-        id="menu-btn">
+        id="menu-btn"
+        aria-label="menu button">
         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
           <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
@@ -47,7 +48,7 @@
             rel="noreferrer">CV</a>
         </li>
         <li>
-          <button type="button" id="theme-toggle">
+          <button type="button" id="theme-toggle" aria-label="theme toggle button">
             <span class="px-4 py-2 flex items-center leading-snug">
               <div class="transition duration-500 ease-in-out rounded-full p-2">
                 <svg
