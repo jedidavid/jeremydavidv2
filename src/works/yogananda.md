@@ -2,6 +2,7 @@
 title: Yogananda Teachings Library
 tags:
   - works
+  - featured
 types:
   - Frontend
 img: /assets/img/yogananda.jpg
