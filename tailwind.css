@@ -14,16 +14,16 @@
 
 @layer components {
   .custom-container {
-    @apply w-full mx-auto;
+    @apply mx-auto w-full;
     max-width: calc(100% - 60px);
   }
 
   .nav-wrapper {
-    @apply relative flex flex-wrap items-center justify-between py-8 mb-3 z-50;
+    @apply relative z-50 mb-3 flex flex-wrap items-center justify-between py-8;
   }
 
   .nav-wrapper.active {
-    @apply fixed w-full h-full bg-white dark:bg-matte-black items-start;
+    @apply fixed h-full w-full items-start bg-white dark:bg-matte-black;
   }
 
   .nav-holder {
@@ -31,15 +31,15 @@
   }
 
   .nav-wrapper.active .nav-holder {
-    @apply items-start h-full;
+    @apply h-full items-start;
   }
 
   .nav-link {
-    @apply px-4 py-2 flex items-center lg:text-xl text-4xl font-bold leading-snug hover:opacity-75 base-transition text-transition;
+    @apply base-transition text-transition flex items-center px-1 py-2 text-xl font-semibold leading-snug hover:opacity-75;
   }
 
   .nav-open {
-    @apply pb-20 absolute top-32 left-0 w-full bg-white z-50;
+    @apply absolute left-0 top-32 z-50 w-full bg-white pb-20;
   }
 
   .base-transition {
@@ -59,7 +59,7 @@
   }
 
   .img-transition {
-    @apply transition duration-700 ease-in-out hover:transform hover:scale-105 hover:opacity-75;
+    @apply transition duration-700 ease-in-out hover:scale-105 hover:transform hover:opacity-75;
   }
 
   .link-transition:hover {
@@ -72,6 +72,6 @@
   }
 
   .skill {
-    @apply py-2 px-4 mr-2 mb-2 sm:text-2xl text-lg font-bold border border-gray-200 rounded-full;
+    @apply mb-2 mr-2 rounded-full border border-gray-200 px-4 py-2 text-lg font-semibold;
   }
 }

@@ -11,17 +11,18 @@ title: "Works"
           <div>
             <a href="{{ work.data.link }}">
               {% image work.data.img, work.data.title, "img-transition", ["900, 600"] %}
-              <div class="py-2">
-                <p>
-                  {% for type in work.data.types | join(", ") -%}
-                    {{ type }}
-                  {%- endfor %}
-                </p>
-                <a href="{{ work.data.link }}" class="cursor-pointer md:text-4xl sm:text-3xl text-2xl font-bold flex items-center base-transition text-transition">{{ work.data.title }}</a>
-              </div>
+            </a>
+            <div class="py-2">
+              <a href="{{ work.data.link }}" class="cursor-pointer md:text-3xl text-2xl font-semibold flex items-center base-transition text-transition">{{ work.data.title }}</a>
+              <p>
+                {% for type in work.data.types | join(", ") -%}
+                  {{ type }}
+                {%- endfor %}
+              </p>
             </div>
-          {% endfor %}
-        </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
-  {% endblock main %}
+  </div>
+{% endblock main %}
