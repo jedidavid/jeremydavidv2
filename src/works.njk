@@ -9,7 +9,7 @@ title: "Works"
       <div class="grid lg:grid-cols-2 grid-cols-1 xl:gap-16 gap-8">
         {% for work in collections.works %}
           <div>
-            <a href="{{ work.data.link }}">
+            <a href="{{ work.data.link }}" title="{{ work.data.title }}">
               {% image work.data.img, work.data.title, "img-transition", ["900, 600"] %}
             </a>
             <div class="py-2">
