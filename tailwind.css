@@ -35,7 +35,7 @@
   }
 
   .nav-link {
-    @apply base-transition text-transition flex items-center px-1 py-2 text-xl font-semibold leading-snug hover:opacity-75;
+    @apply base-transition text-transition flex items-center px-1 py-2 text-lg font-semibold leading-snug hover:opacity-75;
   }
 
   .nav-open {
@@ -61,7 +61,20 @@
   .img-transition {
     @apply transition duration-700 ease-in-out hover:scale-105 hover:transform hover:opacity-75;
   }
-
+  .gradient-text {
+    background: linear-gradient(
+      to right,
+      #5433ff,
+      #20bdff,
+      #a5fecb,
+      #20bdff,
+      #a5fecb,
+      #5433ff,
+      #a5fecb
+    );
+    background-size: 300% 300%;
+    background-clip: text;
+  }
   .link-transition:hover {
     --d: 100%;
   }

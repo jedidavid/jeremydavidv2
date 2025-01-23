@@ -4,15 +4,6 @@ module.exports = {
   content: ["src/**/*.{html,njk}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    screens: {
-      xs: "400px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-      "3xl": "1740px",
-    },
     extend: {
       flex: {
         sticky: "1 0 auto",
@@ -22,6 +13,16 @@ module.exports = {
       },
       colors: {
         "matte-black": "#151515",
+        "granite-gray": "#646464",
+      },
+      keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+        },
+      },
+      animation: {
+        gradient: "gradient 6s linear infinite",
       },
     },
     container: {
