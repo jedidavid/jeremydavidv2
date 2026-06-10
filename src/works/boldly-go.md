@@ -5,7 +5,9 @@ tags:
   - works
   - featured
 types:
-  - Landing Page
+  - Website
+  - Static
+  - Eleventy
 img: /assets/img/boldly-go.jpg
 link: https://boldlygo.labcentral.org/
 ---

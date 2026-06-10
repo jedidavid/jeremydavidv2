@@ -4,7 +4,7 @@ date: 2019-02-01
 tags:
   - works
 types:
-  - Landing Page
+  - Website
 img: /assets/img/le-septentrion.jpg
 link: https://www.septentrion.fr/
 ---

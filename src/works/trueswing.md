@@ -6,6 +6,7 @@ tags:
   - featured
 types:
   - E-commerce
+  - Shopify
 img: /assets/img/trueswing.jpg
 link: https://trueswing.com/
 ---

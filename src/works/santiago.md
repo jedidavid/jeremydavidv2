@@ -5,6 +5,7 @@ tags:
   - works
 types:
   - Website
+  - Wordpress
 img: /assets/img/santiago.jpg
 link: https://santiagoinvestmentgroup.com/
 ---

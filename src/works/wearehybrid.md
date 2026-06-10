@@ -4,7 +4,7 @@ date: 2022-11-01
 tags:
   - works
 types:
-  - Frontend
+  - Landing Page
 img: /assets/img/wearehybrid.jpg
 link: https://we-are-all-hybrids.netlify.app/
 ---

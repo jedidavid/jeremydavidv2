@@ -6,6 +6,7 @@ tags:
   - featured
 types:
   - E-commerce
+  - Shopify
 img: /assets/img/sohaliving.jpg
 link: https://sohaliving.com
 ---

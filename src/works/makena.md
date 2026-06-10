@@ -5,6 +5,7 @@ tags:
   - works
 types:
   - E-commerce
+  - Shopify
 img: /assets/img/makena.jpg
 link: https://makenahawaii.co/
 ---
