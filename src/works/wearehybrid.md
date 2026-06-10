@@ -1,5 +1,6 @@
 ---
 title: Toyota "We are All hybrids." Campaign
+date: 2022-11-01
 tags:
   - works
 types:

@@ -1,5 +1,6 @@
 ---
 title: Medcure
+date: 2026-03-31
 tags:
   - works
 types:

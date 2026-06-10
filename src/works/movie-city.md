@@ -1,5 +1,6 @@
 ---
 title: Movie City
+date: 2021-04-01
 tags:
   - works
 types:

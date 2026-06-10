@@ -1,5 +1,6 @@
 ---
 title: Santiago
+date: 2026-05-27
 tags:
   - works
 types:

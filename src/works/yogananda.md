@@ -1,5 +1,6 @@
 ---
 title: Yogananda Teachings Library
+date: 2024-09-12
 tags:
   - works
 types:
