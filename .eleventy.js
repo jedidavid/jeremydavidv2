@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/img");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/files");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   eleventyConfig.addPassthroughCopy({ static: "/" });
 
@@ -36,7 +37,7 @@ module.exports = function (eleventyConfig) {
         decoding: "async",
       };
       return Image.generateHTML(metadata, imageAttributes);
-    }
+    },
   );
 
   /* Options */
