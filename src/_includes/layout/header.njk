@@ -40,7 +40,7 @@
             Resume</a>
         </li>
         <li class="flex">
-          <button type="button" id="theme-toggle" aria-label="theme toggle button">
+          <button type="button" class="theme-toggle" aria-label="theme toggle button">
             <span class="flex items-center leading-snug">
               <div class="transition duration-500 ease-in-out">
                 <svg
@@ -48,11 +48,10 @@
                   fill="currentColor"
                   stroke-width="0"
                   viewBox="0 0 20 20"
-                  class="text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
+                  class="theme-dark-icon text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
                   height="18"
                   width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="theme-dark">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                 </svg>
                 <svg
@@ -60,11 +59,10 @@
                   stroke-width="1.5"
                   fill="none"
                   viewBox="0 0 20 20"
-                  class="text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
+                  class="theme-light-icon text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
                   height="18"
                   width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="theme-light">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -76,6 +74,93 @@
           </button>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <div
+    id="menu-overlay"
+    class="fixed inset-0 z-40 bg-black/50 opacity-0 invisible transition-opacity duration-300 ease-in-out md:hidden"
+    aria-hidden="true">
+  </div>
+
+  <div
+    id="menu-panel"
+    class="fixed top-0 right-0 z-50 h-full w-80 translate-x-full transition-transform duration-300 ease-in-out
+      bg-[#f5f4f0] dark:bg-neutral-950 shadow-2xl md:hidden">
+    <div class="flex items-center justify-between p-4">
+      <a href="/" class="flex items-center space-x-3" id="menu-panel-logo">
+        <span class="self-center text-3xl tracking-[-9px] font-bold whitespace-nowrap">
+          JD
+        </span>
+      </a>
+      <button
+        type="button"
+        id="menu-close"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-950 rounded-lg
+          hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700
+          dark:focus:ring-gray-600"
+        aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="flex flex-col px-6 py-2 space-y-1">
+      <li>
+        <a href="/" class="nav-link" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="/works" class="nav-link">
+          Works</a>
+      </li>
+      <li>
+        <a href="#contact" class="nav-link">
+          Contact</a>
+      </li>
+      <li>
+        <a
+          href="/assets/files/JeremyDavid-Resume.pdf"
+          download="JeremyDavid-Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          class="nav-link">
+          Resume</a>
+      </li>
+    </ul>
+    <div class="flex px-6 py-4">
+      <button type="button" class="theme-toggle" aria-label="theme toggle button">
+        <span class="flex items-center leading-snug">
+          <div class="transition duration-500 ease-in-out">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 20 20"
+              class="theme-dark-icon text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
+              height="18"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+              viewBox="0 0 20 20"
+              class="theme-light-icon text-neutral-950 dark:text-white text-2xl cursor-pointer hidden base-transition text-transition"
+              height="18"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25
+                  12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
+            </svg>
+          </div>
+        </span>
+      </button>
     </div>
   </div>
 </nav>
