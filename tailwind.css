@@ -10,6 +10,10 @@
     @apply font-normal;
     @apply font-body;
   }
+  h1,
+  h2 {
+    @apply font-heading;
+  }
 }
 
 @layer components {
@@ -35,7 +39,7 @@
   }
 
   .nav-link {
-    @apply base-transition text-transition flex items-center px-1 py-2 text-lg font-semibold leading-snug hover:opacity-75;
+    @apply base-transition text-transition flex items-center px-1 py-2 leading-snug hover:opacity-75 font-medium;
   }
 
   .nav-open {
@@ -43,7 +47,7 @@
   }
 
   .base-transition {
-    @apply transition duration-200 ease-in-out;
+    @apply transition duration-200 ease-in;
   }
 
   .text-transition {
@@ -59,7 +63,7 @@
   }
 
   .img-transition {
-    @apply transition duration-700 ease-in-out hover:scale-105 hover:transform hover:opacity-75;
+    @apply transition duration-200 ease-in hover:opacity-75;
   }
   .gradient-text {
     background: linear-gradient(

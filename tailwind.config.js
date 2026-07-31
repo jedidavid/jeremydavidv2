@@ -29,7 +29,8 @@ module.exports = {
       padding: "1rem",
     },
     fontFamily: {
-      body: ["Karla", "sans-serif"],
+      body: ["Work Sans", "sans-serif"],
+      heading: ["DM Serif Display", "serif"],
     },
   },
   variants: {
