@@ -13,7 +13,7 @@ title: "Works"
           </div>
           <div class="py-4">
             <p class="md:text-2xl text-xl font-semibold flex items-center">{{ work.data.title }}</p>
-            <p class="text-neutral-950">
+            <p class="text-neutral-950 dark:text-white">
               {% for type in work.data.types | join(", ") -%}
                 {{ type }}
               {%- endfor %}
