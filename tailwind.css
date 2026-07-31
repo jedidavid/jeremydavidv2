@@ -89,6 +89,6 @@
   }
 
   .skill {
-    @apply mb-2 mr-2 rounded-full border border-gray-200 px-4 py-2 text-lg font-semibold;
+    @apply mb-2 mr-2 rounded-full border border-gray-200 px-4 py-2 text-base font-semibold;
   }
 }
