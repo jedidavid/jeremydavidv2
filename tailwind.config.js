@@ -4,20 +4,8 @@ module.exports = {
   content: ["src/**/*.{html,njk}"],
   theme: {
     extend: {
-      flex: {
-        sticky: "1 0 auto",
-      },
       fontSize: {
         "8/2xl": "7rem",
-      },
-      keyframes: {
-        gradient: {
-          "0%": { backgroundPosition: "0% 50%" },
-          "100%": { backgroundPosition: "100% 50%" },
-        },
-      },
-      animation: {
-        gradient: "gradient 6s linear infinite",
       },
     },
     container: {

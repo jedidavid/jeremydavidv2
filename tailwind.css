@@ -17,33 +17,12 @@
 }
 
 @layer components {
-  .custom-container {
-    @apply mx-auto w-full;
-    max-width: calc(100% - 60px);
-  }
-
-  .nav-wrapper {
-    @apply relative z-50 mb-3 flex flex-wrap items-center justify-between py-8;
-  }
-
-  .nav-wrapper.active {
-    @apply fixed h-full w-full items-start bg-white;
-  }
-
   .nav-holder {
     @apply container mx-auto flex flex-wrap items-center justify-between;
   }
 
-  .nav-wrapper.active .nav-holder {
-    @apply h-full items-start;
-  }
-
   .nav-link {
     @apply base-transition text-transition flex items-center px-1 py-2 leading-snug hover:opacity-75 font-medium;
-  }
-
-  .nav-open {
-    @apply absolute left-0 top-32 z-50 w-full bg-white pb-20;
   }
 
   .base-transition {
@@ -54,38 +33,8 @@
     @apply hover:text-green-500;
   }
 
-  .border-transition {
-    @apply hover:border-green-500;
-  }
-
-  .bg-transition {
-    @apply hover:bg-green-500;
-  }
-
   .img-transition {
     @apply transition duration-200 ease-in hover:opacity-75;
-  }
-  .gradient-text {
-    background: linear-gradient(
-      to right,
-      #5433ff,
-      #20bdff,
-      #a5fecb,
-      #20bdff,
-      #a5fecb,
-      #5433ff,
-      #a5fecb
-    );
-    background-size: 300% 300%;
-    background-clip: text;
-  }
-  .link-transition:hover {
-    --d: 100%;
-  }
-
-  .title-decorator::before {
-    content: "";
-    @apply absolute bottom-0 left-0 h-1 w-full bg-green-500;
   }
 
   .skill {
