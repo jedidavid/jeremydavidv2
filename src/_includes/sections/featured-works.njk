@@ -1,7 +1,7 @@
 <div class="pb-20" id="featured-works">
   <div class="pb-10">
     <div class="flex gap-2 items-center mb-8">
-      <span class="w-12 h-[1px] bg-neutral-950 dark:bg-white block"></span>
+      <span class="w-12 h-[1px] bg-neutral-950 block"></span>
       <h2 class="sm:text-4xl text-3xl flex gap-2 items-center tracking-tighter leading-none">
         Featured Works
       </h2>
@@ -14,7 +14,7 @@
           </div>
           <div class="py-4">
             <p class="md:text-2xl text-xl font-semibold flex items-center">{{ work.data.title }}</p>
-            <p class="text-neutral-950 dark:text-gray-400">
+            <p class="text-neutral-950">
               {% for type in work.data.types | join(", ") -%}
                 {{ type }}
               {%- endfor %}
@@ -28,7 +28,7 @@
     <a
       href="/works"
       class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-neutral-950
-        dark:bg-white px-6 font-medium text-neutral-200 dark:text-neutral-950">
+        px-6 font-medium text-neutral-200">
       <span>View more</span>
       <div class="w-0 translate-x-[100%] pl-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-0
           group-hover:pl-1 group-hover:opacity-100">

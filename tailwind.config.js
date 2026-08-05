@@ -2,7 +2,6 @@
 
 module.exports = {
   content: ["src/**/*.{html,njk}"],
-  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       flex: {
@@ -10,10 +9,6 @@ module.exports = {
       },
       fontSize: {
         "8/2xl": "7rem",
-      },
-      colors: {
-        "matte-black": "#151515",
-        "granite-gray": "#646464",
       },
       keyframes: {
         gradient: {

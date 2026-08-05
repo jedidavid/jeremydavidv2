@@ -13,25 +13,8 @@
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/fonts.css' | url }}" defer/>
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css' | url }}" defer/>
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem('color-theme') === 'dark' ||
-        (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        document
-          .documentElement
-          .classList
-          .add('dark');
-      } else {
-        document
-          .documentElement
-          .classList
-          .remove('dark')
-      }
-    </script>
   </head>
-  <body class="bg-[#f5f4f0] text-neutral-950 dark:bg-neutral-950 dark:text-white">
+  <body class="bg-[#f5f4f0] text-neutral-950">
     {% include "layout/header.njk" %}
     <main>
       {% block main %}{% endblock main %}

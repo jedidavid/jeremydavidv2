@@ -27,7 +27,7 @@
   }
 
   .nav-wrapper.active {
-    @apply fixed h-full w-full items-start bg-white dark:bg-matte-black;
+    @apply fixed h-full w-full items-start bg-white;
   }
 
   .nav-holder {
@@ -51,15 +51,15 @@
   }
 
   .text-transition {
-    @apply hover:text-green-500 dark:hover:text-green-500;
+    @apply hover:text-green-500;
   }
 
   .border-transition {
-    @apply hover:border-green-500 dark:hover:border-green-500;
+    @apply hover:border-green-500;
   }
 
   .bg-transition {
-    @apply hover:bg-green-500 dark:hover:bg-green-500;
+    @apply hover:bg-green-500;
   }
 
   .img-transition {
